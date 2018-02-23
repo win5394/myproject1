@@ -1,0 +1,1530 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@font-face {
+    font-family: ng;
+    src: url(NanumGothic.eot);
+    src: local(※), url(NanumGothic.woff) format('woff')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 나눔고딕, NanumGothic, ng
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+/*구형 익스플로러 보더 제거용*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+/**********공통사항**********/
+
+/*page 전체 틀*/
+
+#page {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*header*/
+
+#page header {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    z-index: 99999999;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ebebeb;
+}
+
+
+#page header > .main_nav {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 768px;
+    z-index: 100;
+}
+
+/*header의 로고*/
+
+#page header > .main_nav > .logo {
+    width: 50%;
+    height: 90px;
+    position: absolute;
+    top: 26.5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+
+
+#page header > .main_nav > .logo > a > img {
+    width: 30%;
+}
+
+
+#page header > .main_nav > ul {
+    position: absolute;
+    right: 0%;
+    width: 50%;
+    height: 90px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+#page header > .main_nav > ul > li {
+    width: 20%;
+    height: 90px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 90px;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+
+#page header > .main_nav > ul > li > a {
+    color: #444;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+#page header > .main_nav > ul > li > a:hover {
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+ul.sub_nav {
+    width: 100%;
+    height: 0px;
+    background: #fff;
+    position: absolute;
+    overflow: hidden;
+    top: 90px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: height .2s;
+    transition: height .2s;
+}
+
+ul.sub_nav > li {
+    width: 100%;
+    line-height: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul.sub_nav > li > a {
+    width: 100%;
+    font-size: 0.93vw;
+    color: #444;
+}
+
+ul.sub_nav > li > a:hover {
+    color: #2d9ad8;
+}
+
+.main_nav > ul > li:hover > ul.sub_nav {
+    height: 250px;
+    border-radius: 0 0 5px 5px;
+    border-bottom: 1px solid #2d9ad8;
+    border-left: 1px solid #2d9ad8;
+    border-right: 1px solid #2d9ad8;
+}
+
+.main_nav > ul > li:hover {
+    border-bottom: 3px solid #2d9ad8;
+}
+
+/*footer*/
+
+#page footer {
+    width: 100%;
+    height: 200px;
+    background: #444;
+    overflow: hidden;
+}
+
+footer > .foot_content {
+    width: 100%;
+    height: 200px;
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto;
+}
+
+footer > .foot_content > div {
+    width: 33.33%;
+    height: 200px;
+    padding-top: 25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-right: 1px solid #666;
+}
+
+footer > .foot_content > div:last-child {
+    border: none;
+}
+
+footer > .foot_content > div a {
+    display: block;
+    width: 30%;
+    height: 30px;
+    font-size: 0.9vw;
+    line-height: 30px;
+    color: #fff;
+}
+
+footer > .foot_content > .contents_l > ul > li:hover > .contents_l a {
+    color: #000;
+}
+
+
+footer > .foot_content > .contents_c > ul {
+    width: 100%;
+    height: 75px;
+}
+
+footer > .foot_content > .contents_c > ul > li {
+    float: left;
+    width: 25%;
+    height: 75px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer > .foot_content > .contents_c > ul > li > a {
+    width: 100%;
+}
+
+footer > .foot_content > .contents_c > ul > li i {
+    font-size: 2.5vw;
+}
+
+footer > .foot_content > .contents_c > ul > li i:hover {
+    color: #000;
+}
+
+footer > .foot_content > .contents_c > div {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8vw;
+    padding-top: 35px;
+}
+
+footer > .foot_content > .contents_r {
+    font-size: 0.9vw;
+    color: #fff;
+    height: 180px;
+}
+
+footer > .foot_content > .contents_r > div {
+    height: calc(100%/6);
+    text-align: right;
+}
+
+/**********공통사항 끝**********/
+
+/**********메인페이지**********/
+
+/*main 전체 틀*/
+
+#page > #main {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/*section*/
+
+#page > #main > section {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 90px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/*section메인배너 영역*/
+
+#page > #main > section > .t_section {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    min-width: 768px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#page > #main > section > .t_section .main_bxslider img {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#page > #main > section > .m_section {
+    width: 100%;
+    height: 170px;
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#page > #main > section > .m_section > .m_icon {
+    height: 100%;
+    padding: 0 8%;
+}
+
+#page > #main > section > .m_section > .m_icon > div {
+    width: 20%;
+    height: 170px;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+#page > #main > section > .m_section > .m_icon > .icon1 > img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+
+#page > #main > section > .m_section > .m_icon > div {
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+}
+
+#page > #main > section > .m_section > .m_icon p {
+    font-size: 1.3vw;
+    color: #666;
+    font-weight: bold;
+}
+
+#page > #main > section > .m_section > .m_icon span {
+    font-size: 1vw;
+    color: #666;
+    font-weight: 500;
+}
+
+#page > #main > section > .m_section > .m_icon > div:hover {
+    -webkit-filter: grayscale(0%);
+    filter: none;
+}
+
+/*section 책 슬라이드 영역*/
+
+#page > #main > section > .b_section1 {
+    width: 100%;
+    height: 280px;
+    max-width: 1200px;
+    min-width: 768px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+
+#page > #main > section > .b_section1 > span {
+    font-size: 1.5vw;
+    color: #444;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+#page > #main > section > .b_section1 > .btn {
+    position: absolute;
+    right: 0;
+    font-size: 2vw;
+    margin-right: 40px;
+}
+
+#page > #main > section > .b_section1 > .btn > a {
+    color: #888;
+}
+
+#page > #main > section > .b_section1 > .btn > a:hover {
+    color: #444;
+}
+
+#page > #main > section > .b_section1 > ul {
+    margin-top: 40px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+#page > #main > section > .b_section1 li {
+    float: left;
+    width: 14%;
+    height: 200px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#page > #main > section > .b_section1 li:nth-child(2) {
+    margin: 0 5.8%;
+}
+
+#page > #main > section > .b_section1 li:nth-child(4) {
+    margin: 0 5.8%;
+}
+
+#page > #main > section > .b_section1 > ul > .book1 > div {
+    width: 100%;
+    height: 100%;
+    background: #2d9ad8;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    min-width: 145px;
+}
+
+#page > #main > section > .b_section1 > ul span {
+    margin-top: 70px;
+    position: absolute;
+    left: 26%;
+    top: 22%;
+    letter-spacing: 0.5px;
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+
+#page > #main > section > .b_section1 > ul > li > div {
+    position: relative;
+}
+
+#page > #main > section > .b_section1 > ul a > .fa-star {
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    font-size: 2.2vw;
+    color: #fff;
+}
+
+#page > #main > section > .b_section1 > ul a > .fa-shopping-cart {
+    position: absolute;
+    top: 28%;
+    right: 20%;
+    font-size: 2.2vw;
+    color: #fff;
+}
+
+#page > #main > section > .b_section1 > ul > .book1 > div:hover {
+    opacity: 1;
+}
+
+#page > #main > section > .b_section1 > ul > .book2 > div {
+    width: 100%;
+    height: 200px;
+    background: #2d9ad8;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    min-width: 145px;
+}
+
+#page > #main > section > .b_section1 > ul > .book2 > div:hover {
+    opacity: 1;
+}
+
+#page > #main > section > .b_section1 > ul > .book3 > div {
+    width: 100%;
+    height: 200px;
+    background: #2d9ad8;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    min-width: 145px;
+}
+
+#page > #main > section > .b_section1 > ul > .book3 > div:hover {
+    opacity: 1;
+}
+
+
+#page > #main > section > .b_section1 > ul > .book4 > div {
+    width: 100%;
+    height: 200px;
+    background: #2d9ad8;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    min-width: 145px;
+}
+
+#page > #main > section > .b_section1 > ul > .book4 > div:hover {
+    opacity: 1;
+}
+
+#page > #main > section > .b_section1 > ul > .book5 > div {
+    width: 100%;
+    height: 200px;
+    background: #2d9ad8;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    min-width: 145px;
+}
+
+#page > #main > section > .b_section1 > ul > .book5 > div:hover {
+    opacity: 1;
+}
+
+
+#page > #main > section > .b_section1 > ul img {
+    width: 100%;
+    position: absolute;
+    height: 200px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 145px;
+}
+
+
+#page > #main > section > .b_section2 {
+    width: 100%;
+    height: 280px;
+    max-width: 1200px;
+    min-width: 768px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+}
+
+#page > #main > section > .b_section2 > span {
+    font-size: 1.5vw;
+    color: #444;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+#page > #main > section > .b_section2 > .btn {
+    position: absolute;
+    right: 0;
+    font-size: 2vw;
+    margin-right: 40px;
+}
+
+#page > #main > section > .b_section2 > .btn > a {
+    color: #888;
+}
+
+#page > #main > section > .b_section2 > .btn > a:hover {
+    color: #444;
+}
+
+#page > #main > section > .b_section2 > ul {
+    margin-top: 40px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+#page > #main > section > .b_section2 li {
+    float: left;
+    width: 14%;
+    height: 200px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#page > #main > section > .b_section2 li:nth-child(2) {
+    margin: 0 5.8%;
+}
+
+#page > #main > section > .b_section2 li:nth-child(4) {
+    margin: 0 5.8%;
+}
+
+#page > #main > section > .b_section2 > ul > .book1 > div {
+    width: 100%;
+    height: 200px;
+    background: #2d9ad8;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+}
+
+#page > #main > section > .b_section2 > ul img {
+    width: 100%;
+    position: absolute;
+    height: 200px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#page > #main > section > .b_section2 .content {
+    height: 200px;
+}
+
+#page > #main > section > .b_section2 .contents1 {
+    width: 19%;
+}
+
+#page > #main > section > .b_section2 .contents2 {
+    width: 19%;
+}
+
+#page > #main > section > .b_section2 .contents3 {
+    width: 19%;
+}
+
+#page > #main > section > .b_section2 .contents4 {
+    width: 19%;
+}
+
+.caption {
+    z-index: 999;
+    color: #333;
+    padding-left: 20px;
+    position: absolute;
+    bottom: -66px;
+    background: #fff;
+}
+
+.caption > h3 {
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+.card_descript {
+    position: relative;
+    top: 0;
+    font-size: 0.9em;
+    padding: 0 10px;
+}
+
+.contents1:hover .caption {
+    -webkit-transition: .3s;
+    transition: .3s;
+    bottom: 0;
+}
+
+
+.contents2:hover .caption {
+    -webkit-transition: .3s;
+    transition: .3s;
+    bottom: 0;
+}
+
+
+.contents3:hover .caption {
+    -webkit-transition: .3s;
+    transition: .3s;
+    bottom: 0;
+}
+
+
+.contents4:hover .caption {
+    -webkit-transition: .3s;
+    transition: .3s;
+    bottom: 0;
+}
+
+
+/* 사용자 페이징 - 위치와 모양을 자유롭게 변형 */
+
+#bx-pager1 {
+    position: absolute;
+    bottom: 10px;
+}
+
+#bx-pager1 a {
+    float: left;
+    margin: 0 5px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    background: #999;
+    color: #333
+}
+
+#bx-pager1 a:hover,
+.bx-pager1 a:active {
+    background: #000;
+    color: #CCC;
+}
+
+/* 사용자 페이징 - 엑티브상태에 대한 속성값 지정 */
+
+#bx-pager1 a.active {
+    background: #000;
+    color: #CCC;
+}
+
+/**********메인페이지 끝**********/
+
+/**********책소개 페이지**********/
+
+/*책소개 전체 틀*/
+
+#page > #sub_book {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*section*/
+
+#page > #sub_book > section {
+    width: 100%;
+    height: 2905px;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 90px;
+}
+
+/*section 신간도서 부분 */
+
+.newbook_tbg {
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.newbook_tbg img {
+    display: block;
+}
+
+#page > #sub_book > section > .newbook > .imglist {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 768px;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .newbook_title {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 768px;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin: 40px 0;
+    color: #444;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents {
+    width: 100%;
+    height: 250px;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div {
+    width: 49%;
+    height: 96%;
+    border: 1px solid #ebebeb;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 2%;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > .side {
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div:last-child {
+    margin-right: 0;
+}
+
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div > .n_book {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div > .n_book img {
+    width: 60%;
+    height: 80%;
+    margin: 10% 20%;
+    display: block;
+    opacity: 1;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div > .n_text {
+    z-index: 500;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div > .n_text > div {
+    width: 60%;
+    height: 80%;
+    opacity: 0;
+    margin: 10% 20%;
+    background: #fff;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div > .n_text > div:hover {
+    opacity: 1;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div > .n_ex {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    right: 0;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div > .n_ex > div {
+    width: 87%;
+    height: 82%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-right: 13%;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div > .n_ex > div h4 {
+    height: 30px;
+    border-bottom: 1.5px solid #444;
+    font-size: 1.4vw;
+    font-weight: normal;
+    color: #444;
+    padding-bottom: 5px;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div > .n_ex > div > div > div {
+    width: 100%;
+    height: 80px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 0.95vw;
+    padding: 8px 0;
+    line-height: 20px;
+    border-bottom: 0.8px solid #444;
+}
+
+#page > #sub_book > section > .newbook > .imglist > .contents > div > .n_ex > div > div > div:first-child {
+    border-bottom: 0.5px solid #444;
+}
+
+.n_ex > div > div > div > p > span {
+    display: inline-block;
+    width: 30%;
+}
+
+.fancybox-caption-wrap,
+.fancybox-infobar,
+.fancybox-toolbar {
+    margin-top: 150px;
+}
+
+body.fancybox-active {
+    overflow: visible;
+}
+
+.fancybox-slide {
+    top: 70px;
+}
+
+.fancybox-image {
+    width: 80%;
+    height: 80%;
+}
+
+/*section 신간도서 부분 끝 */
+
+/**********책소개 페이지 끝**********/
+
+/**********고객지원 페이지**********/
+
+#page > #sub_customer {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*section*/
+
+#page > #sub_customer > section {
+    width: 100%;
+    position: relative;
+    margin-top: 90px;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+}
+
+#page > #sub_customer > section > .community > .community_title {
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #444;
+    line-height: 40px;
+}
+
+#page > #sub_customer > section > .community > .community_title > h1 {
+    font-size: 1.8em;
+    color: #444;
+}
+
+#page > #sub_customer > section > .community > .community_title > .w_search {
+    width: 100%;
+    border: 1px solid #ebebeb;
+    height: 120px;
+    margin-top: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+#page > #sub_customer > section > .community > .community_title > .w_search > p {
+    /*    background: #ccc;*/
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    color: #2d9ad8;
+    margin-top: 10px;
+}
+
+#page > #sub_customer > section > .community > .community_title > .w_search > p + .search {
+    /*    border: 1px solid red;*/
+    width: 100%;
+    /*    margin-top: 10px;*/
+    text-align: center;
+    /*    background: yellow;*/
+}
+
+#page > #sub_customer > section > .community > .community_title > .w_search > p + .search > input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #2d9ad8;
+}
+
+#page > #sub_customer > section > .community > .community_title > .w_search > p + .search > button {
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    background: #2d9ad8;
+    border: none;
+    color: white;
+    border-radius: 5%;
+
+}
+
+#page > #sub_customer > section > .community > .community_title > .w_search > p + .search > button:hover {
+    background: #206c96;
+}
+
+#page > #sub_customer > section > .community > .t_section {
+    width: 100%;
+    height: 250px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto;
+}
+
+#page > #sub_customer > section > .community > .t_section > .wrap1 {
+    width: 68%;
+    height: 250px;
+    float: left;
+    margin-right: 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+#page > #sub_customer > section > .community > .t_section > .wrap1 > .bxslider {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.bxslider img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    border: none;
+}
+
+/*100%로 채우기위해*/
+
+.bx-wrapper {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*버튼부분*/
+
+.bx-wrapper .bx-controls-auto,
+.bx-wrapper .bx-pager {
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+}
+
+/*------------------------------------------------*/
+
+#page > #sub_customer > section > .community > .t_section > .wrap2 {
+    width: 30%;
+    height: 250px;
+    overflow: hidden;
+}
+
+#page > #sub_customer > section > .community > .t_section > .wrap2 > div {
+    width: 50%;
+    height: 125px;
+    float: left;
+    text-align: center;
+}
+
+#page > #sub_customer > section > .community > .t_section > .wrap2 > div > a {
+    display: block;
+    height: 125px;
+    overflow: hidden;
+    padding-top: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #2d9ad8;
+    border: 1px solid #ebebeb;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+}
+
+#page > #sub_customer > section > .community > .t_section > .wrap2 > div:nth-child(2n-1) > a {
+    border-right: none;
+}
+
+#page > #sub_customer > section > .community > .t_section > .wrap2 > div:nth-child(2) > a {
+    border-bottom: none;
+}
+
+#page > #sub_customer > section > .community > .t_section > .wrap2 > div:first-child > a {
+    border-bottom: none;
+}
+
+#page > #sub_customer > section > .community > .t_section > .wrap2 > div > a > p {
+    padding-top: 5px;
+    font-size: 0.8em;
+}
+
+#page > #sub_customer > section > .community > .t_section > .wrap2 > div:hover a {
+    background: #2d9ad8;
+    color: white;
+}
+
+/*-----------------section 공지사항-------------------*/
+
+#page > #sub_customer > section > .community > .b_section {
+    width: 100%;
+    height: 200px;
+    background-repeat: repeat-y;
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 40px auto 0 auto;
+
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice {
+    width: 50%;
+    height: 200px;
+    /*    background: #666;*/
+    float: left;
+    /*    padding-top: 0;*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    border: 1px solid red;*/
+    position: relative;
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice > h1 {
+    padding-bottom: 30px;
+    font-size: 1.5vw;
+    color: #444;
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice > h1 + p {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 0.8em;
+    /*    border: 1px solid red;*/
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice > h1 + p > a {
+    color: black;
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice > h1 + p > a > i {
+    padding-left: 5px;
+    color: black;
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice > ul > li > a {
+    color: black;
+    float: left;
+    display: block;
+    font-size: 1em;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice > ul > li {
+    /*    border: 1px solid red;*/
+    height: 31px;
+    line-height: 31px;
+    /*    padding-bottom: 10px;*/
+    border-bottom: 1px solid rgba(32, 108, 150, 0.21);
+    overflow: hidden;
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice > ul {
+    /*    border: 1px solid red;*/
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice > ul > li > a > .col1 {
+    padding-right: 20px;
+    float: left;
+    display: block;
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice > ul > li > .col2 {
+    /*    border: 1px solid red;*/
+    padding-right: 20px;
+    margin-top: 2px;
+    font-size: 0.8em;
+    float: right;
+    display: block;
+}
+
+#page > #sub_customer > section > .community > .b_section > .notice > ul > li > a:hover {
+    color: #2d9ad8;
+}
+
+/*-------------section QnA*--------------*/
+
+#page > #sub_customer > section > .community > .b_section > .qna {
+    width: 50%;
+    height: 200px;
+    /*    background: #666;*/
+    float: left;
+    /*    padding-top: 0;*/
+    padding-left: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    border: 1px solid red;*/
+    position: relative;
+}
+
+#page > #sub_customer > section > .community > .b_section > .qna > h1 {
+    padding-bottom: 30px;
+    font-size: 1.7vw;
+    color: #444;
+}
+
+#page > #sub_customer > section > .community > .b_section > .qna > h1 + p {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 0.8em;
+    /*    border: 1px solid red;*/
+}
+
+#page > #sub_customer > section > .community > .b_section > .qna > h1 + p > a {
+    color: black;
+}
+
+#page > #sub_customer > section > .community > .b_section > .qna > h1 + p > a > i {
+    padding-left: 5px;
+    color: black;
+}
+
+#page > #sub_customer > section > .community > .b_section > .qna > ul > li > a {
+    color: black;
+    font-size: 1em;
+    /*    border: 1px solid red;*/
+    float: left;
+    display: block;
+    width: 78%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#page > #sub_customer > section > .community > .b_section > .qna > ul > li {
+    /*     border: 1px solid red;*/
+    height: 31px;
+    line-height: 31px;
+    /*    padding-bottom: 10px;*/
+    border-bottom: 1px solid rgba(32, 108, 150, 0.21);
+    overflow: hidden;
+
+}
+
+#page > #sub_customer > section > .community > .b_section > .qna > ul {
+    /*    border: 1px solid red;*/
+}
+
+#page > #sub_customer > section > .community > .b_section > .qna > ul > li > a > .col1 {
+    float: left;
+    padding-right: 20px;
+    display: block;
+}
+
+#page > #sub_customer > section > .community > .b_section > .qna > ul > li > .col2 {
+    margin-top: 2px;
+    font-size: 0.8em;
+    float: right;
+    /*    border: 1px solid red;*/
+    display: block;
+
+}
+
+#page > #sub_customer > section > .community > .b_section > .qna > ul > li > a:hover {
+    color: #2d9ad8;
+}
+
+
+/**********고객지원 페이지 끝**********/
+
+/******************************이벤트 페이지 ******************************/
+
+#page > #sub_event {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#page > #sub_event > section {
+    width: 100%;
+    position: relative;
+    margin-top: 90px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+/**********이벤트 페이지 헤더 글자************/
+
+#page > #sub_event > section > .event > h1 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    color: #444;
+}
+
+#page > #sub_event > section > .event {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 768px;
+    /*    border: 1px solid red;*/
+}
+
+#page > #sub_event > section > .event img {
+    display: block;
+}
+
+#page > #sub_event > section > .event > div {
+    float: left;
+    overflow: hidden;
+}
+
+#page > #sub_event > section > .event > .eventbox0 {
+    margin-top: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#page > #sub_event > section > .event > .eventbox1 {
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 0;
+}
+
+#page > #sub_event > section > .event > .eventbox2 {
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 0 20px 20px;
+}
+
+#page > #sub_event > section > .event img {
+    width: 100%;
+}
+
+
+
+
+/******************************이벤트 페이지 끝****************************************/
+
+/**********원고모집 페이지 **********/
+
+/*************기획 및 원고 모집*******************/
+
+/*원고모집 페이지  전체 틀*/
+
+#page > #sub_Recruitment {
+    width: 100%;
+    height: 900px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*section*/
+
+#page > #sub_Recruitment > section {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    margin-top: 90px;
+    background: url(../images/sub_Recruitment/bg1.png);
+    /*    border: 1px solid red;*/
+}
+
+#page > #sub_Recruitment > section > .s_wrap {
+    width: 100%;
+    height: 900px;
+    /*
+    max-width: 1200px;
+    min-width: 768px;
+    */
+    margin: 0 auto;
+    /*    border: 1px solid red;*/
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    width: 80%;
+    height: 650px;
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto;
+    /*    background: #ccc;*/
+    /*   border: 1px solid red;*/
+    /*    padding: 1px;*/
+    -webkit-box-shadow: 7px 6px rgba(45, 154, 216, 0.29);
+    box-shadow: 6px 6px rgba(201, 201, 201, 0.2);
+    /*    box-sizing: border-box;*/
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square1 {
+    width: 40%;
+    height: 650px;
+    background: rgba(45, 154, 216, 0.85);
+    opacity: 1;
+    float: left;
+    overflow: hidden;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square1 > h1 {
+    text-align: center;
+    /*    border: 1px solid red;*/
+    width: 100%;
+    height: 650px;
+    padding-top: 60%;
+    line-height: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    color: white;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 {
+    width: 60%;
+    height: 650px;
+    background: rgba(45, 154, 216, 0.6);
+    opacity: 1;
+    overflow: hidden;
+    /*    padding: 20px;*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    border: 1px solid red;*/
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content {
+    /*    border: 1px solid blue;*/
+    /*    padding: 20px;*/
+    margin: 25px auto;
+    width: 90%;
+    height: 600px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    /*    overflow: scroll;*/
+    /*    overflow-y:scroll;*/
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > legend {
+    /*    text-align: center;*/
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    /*    border: 1px solid red;*/
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div {
+    /*    border: 1px solid red;*/
+    margin-bottom: 8px;
+    color: white;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > label {
+    display: inline-block;
+    /*    border: 1px solid red;*/
+    width: 40%;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > input + span {
+    font-size: 0.7em;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > label > span {
+    color: red;
+    margin-left: 3%;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > input {
+    display: inline-block;
+    width: 13%;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > button#upfile1 {
+    padding: 5px;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > label#book_cont {
+    vertical-align: top;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > input#book_cont {
+    width: 50%;
+    height: 50px;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > #agree {
+    width: 5%;
+    position: relative;
+    top: 3px;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > #agree + span {
+    font-size: 0.8em;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > textarea {
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 10px;
+    /*    border: 1px solid red;*/
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div > textarea#t_area {
+    resize: none;
+    width: 100%;
+    height: 80px;
+    /*    border: 1px solid red;*/
+    padding: 15px 20px;
+    font-size: 0.9em;
+    line-height: 20px;
+    /*    margin-bottom: 10px;*/
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div.btn_area {
+    /*    margin-top: 5px;*/
+    /*    border: 1px solid red;*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    height: 110px;*/
+    padding: 10px;
+    margin-top: 30px;
+}
+
+#page > #sub_Recruitment > section > .s_wrap > .s_wrap2 > .square2 > .content > div.btn_area > a > p {
+    background: rgba(237, 136, 214, 0.8);
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    padding: 5px auto;
+    height: 38px;
+    line-height: 38px;
+    font-size: 1.5em;
+    /*    border: 1px solid red;*/
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 5px rgba(93, 10, 84, 0.2);
+    box-shadow: 4px 5px rgba(93, 10, 84, 0.2);
+    font-weight: bold;
+    color: white;
+}
+
+/**********원고모집 페이지 끝******88888888888888888888888****/

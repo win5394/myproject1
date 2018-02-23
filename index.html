@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>정보문화사 - IT 도서의 표준</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <link REL="SHORTCUT ICON" href="images/favicon.ico" />
+</head>
+
+<body style="overflow: auto; overflow-x:hidden;">
+    <!---  팝업창 --->
+    <div id="layerbox" class="layerpop" style="width: auto; height: auto;">
+        <article class="layerpop_area">
+            <a href="javascript:popupClose();" class="layerpop_close" id="layerbox_close"><i class="fas fa-times fa-2x " style="color: #2d9ad8;"></i></a>
+            <div class="content">
+                <img src="images/popup.png" alt="팝업">
+            </div>
+        </article>
+    </div>
+    <!--- 팝업끝 --->
+
+    <div id="page">
+        <div id="main">
+            <header id="topBar">
+                <nav class="main_nav">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/top_logo.png" alt="로고">
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="sub_book.html">신간도서</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">아이폰/안드로이드</a></li>
+                                <li><a href="#">OA/전자출판</a></li>
+                                <li><a href="#">그래픽/홈페이지</a></li>
+                                <li><a href="#">일반프로그래밍</a></li>
+                                <li><a href="#">게임프로그래밍</a></li>
+                                <li><a href="#">데이터베이스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">출간예정</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">아이폰/안드로이드</a></li>
+                                <li><a href="#">OA/전자출판</a></li>
+                                <li><a href="#">그래픽/홈페이지</a></li>
+                                <li><a href="#">일반프로그래밍</a></li>
+                                <li><a href="#">게임프로그래밍</a></li>
+                                <li><a href="#">데이터베이스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">시리즈안내</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">길라잡이시리즈</a></li>
+                                <li><a href="#">눈길시리즈</a></li>
+                                <li><a href="#">쉽게배우는시리즈</a></li>
+                                <li><a href="#">실력이탐나는시리즈</a></li>
+                                <li><a href="#">모바일레시피시리즈</a></li>
+                                <li><a href="#">포토그래피시리즈</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub_event.html">이벤트</a>
+                        </li>
+                        <li><a href="sub_customer.html">고객지원</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="fixNextTag">
+                <div class="t_section">
+                    <div class="main_banner">
+                        <ul class="main_bxslider">
+                            <li><img src="images/main_banner1.png" alt="메인배너"></li>
+                            <li><img src="images/main_banner2.png" alt="메인배너"></li>
+                            <li><img src="images/main_banner3.png" alt="메인배너"></li>
+                        </ul>
+                    </div>
+                </div>
+                <article class="m_section">
+                    <div class="m_icon">
+                        <div class="icon1">
+                            <a href="#">
+                                <img src="images/icon1.png" alt="아이콘">
+                                <p>그래픽</p>
+                                <span>시리즈</span>
+                            </a>
+                        </div>
+                        <div class="icon2">
+                            <a href="#">
+                            <img src="images/icon2.png" alt="아이콘">
+                                <p>상용화</p>
+                                <span>시리즈</span>
+                            </a>
+                        </div>
+                        <div class="icon3">
+                            <a href="#">
+                            <img src="images/icon3.png" alt="아이콘">
+                                <p>디자인</p>
+                                <span>시리즈</span>
+                            </a>
+                        </div>
+                        <div class="icon4">
+                            <a href="#">
+                            <img src="images/icon4.png" alt="아이콘">
+                                <p>길라잡이</p>
+                                <span>시리즈</span>
+                            </a>
+                        </div>
+                        <div class="icon5">
+                            <a href="#">
+                            <img src="images/icon5.png" alt="아이콘">
+                                <p>모바일</p>
+                                <span>시리즈</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <div class="b_section1">
+                    <span>새로나온 책</span>
+                    <span class="btn">
+                        <a href="sub_book.html">
+                            <i class="fas fa-plus-circle"></i>
+                        </a>
+                    </span>
+                    <ul>
+                        <li class="book1">
+                            <div>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <span class="price">28,000원</span>
+                            </div>
+                            <img src="images/book1.png" alt="책">
+                        </li>
+                        <li class="book2">
+                            <div>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <span class="price">30,000원</span>
+                            </div>
+                            <img src="images/book2.png" alt="책">
+                        </li>
+                        <li class="book3">
+                            <div>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <span class="price">20,000원</span>
+                            </div>
+                            <img src="images/book3.png" alt="책">
+                        </li>
+                        <li class="book4">
+                            <div>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <span class="price">10,000원</span>
+                            </div>
+                            <img src="images/book4.png" alt="책">
+                        </li>
+                        <li class="book5">
+                            <div>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <span class="price">18,000원</span>
+                            </div>
+                            <img src="images/book5.png" alt="책">
+                        </li>
+                    </ul>
+                </div>
+                <div class="b_section2">
+                    <span>컨텐츠</span>
+                    <span class="btn">
+                        <a href="sub_book.html">
+                            <i class="fas fa-plus-circle"></i>
+                        </a>
+                    </span>
+                    <ul class="content">
+                        <li class="contents1">
+                            <img src="images/content1.png" alt="컨텐츠">
+                            <div class="caption">
+                                <h3>Skill</h3>
+                                <p class="card_descript">
+                                    직장인이 가장 배우고 싶은 업무력 향상 실무의 기술을 알려드립니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="contents2">
+                            <img src="images/content2.png" alt="컨텐츠">
+                            <div class="caption">
+                                <h3>Python</h3>
+                                <p class="card_descript">
+                                    초보자들도 쉽게 이해할 수 있는 데이터 분석입문으로 초대합니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="contents3">
+                            <img src="images/content3.png" alt="컨텐츠">
+                            <div class="caption">
+                                <h3>Html&amp;jQuery</h3>
+                                <p class="card_descript">
+                                    Html&amp;jQuery 초보자들의 기초지식과 기본조작을 알려드립니다.
+
+                                </p>
+                            </div>
+                        </li>
+                        <li class="contents4">
+                            <img src="images/content4.png" alt="컨텐츠">
+                            <div class="caption">
+                                <h3>Design</h3>
+                                <p class="card_descript">
+                                    복잡하고 새련된 디자인 패턴과 철학을 오늘부터 배워보세요.
+
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <footer>
+                <div class="foot_content">
+                    <div class="contents_l">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">기획 및 원고 모집</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                    </div>
+                    <div class="contents_c">
+                        <ul class="sns">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                        <div class="copy">©1993-2018 Infopub Publishing Network, Inc. All rights reserved.</div>
+                    </div>
+                    <div class="contents_r">
+                        <div>한빛미디어㈜ • 한빛아카데미㈜ • 한빛비즈㈜</div>
+                        <div>(03785) 서울 서대문구 연희로2길 62</div>
+                        <div>TEL : 02-325-0384 / FAX : 02-325-9697</div>
+                        <div>대표이사 : 김태헌</div>
+                        <div>사업자등록번호 : 220-81-05665</div>
+                        <div>통신판매업신고 : 2017-서울서대문-0671호</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--팝업 스크립트-->
+    <script>
+        function wrapWindowByMask() {
+            //화면의 높이와 너비를 구한다.
+            var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+
+            //문서영역의 크기 
+            console.log("document 사이즈:" + $(document).width() + "*" + $(document).height());
+            //브라우저에서 문서가 보여지는 영역의 크기
+            console.log("window 사이즈:" + $(window).width() + "*" + $(window).height());
+            $('#mask').fadeTo("slow", 0.5);
+        }
+
+        function popupOpen() {
+            $('.layerpop').css("position", "absolute");
+            //영역 가운에데 레이어를 뛰우기 위해 위치 계산 
+            $('.layerpop').css("top", (($(window).height() - $('.layerpop').outerHeight()) / 2) + $(window).scrollTop());
+            $('.layerpop').css("left", (($(window).width() - $('.layerpop').outerWidth()) / 2) + $(window).scrollLeft());
+            $('#layerbox').show();
+        }
+
+        function popupClose() {
+            $('#layerbox').fadeOut();
+            $('#mask').fadeOut();
+        }
+        popupOpen();
+
+    </script>
+    <!--고정상단메뉴-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var topBar = $("#topBar").offset();
+
+            $(window).scroll(function() {
+
+                var docScrollY = $(document).scrollTop()
+                var barThis = $("#topBar")
+                var fixNext = $("#fixNextTag")
+                console.log(docScrollY);
+
+                if (docScrollY > topBar.top) {
+                    barThis.addClass("top_bar_fix");
+                    fixNext.addClass("pd_top_80");
+                } else {
+                    barThis.removeClass("top_bar_fix");
+                    fixNext.removeClass("pd_top_80");
+                }
+
+            });
+
+        })
+
+    </script>
+    <!--하단 슬라이드-->
+    <script>
+        $(document).ready(function() {
+            var slider = $('.main_bxslider').bxSlider({
+                auto: true,
+                autoControls: true,
+                controls: false,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 1600
+            });
+            var slider = $('.sub_bxslider').bxSlider({
+                auto: true,
+                autoControls: true,
+                controls: false,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 1600
+            });
+
+            // 클릭시 멈춤 현상 해결 //
+            $(document).on('click', '.bx-next, .bx-prev', function() {
+                bxslider.stopAuto();
+                bxslider.startAuto();
+                main_bxslider.stopAuto();
+                main_bxslider.startAuto();
+            });
+            $(document).on('mouseover', '.bx-pager, #bx-pager1', function() {
+                bxslider.stopAuto();
+                bxslider.startAuto();
+                main_bxslider.stopAuto();
+                main_bxslider.startAuto();
+            });
+        });
+
+    </script>
+</body>
+
+</html>

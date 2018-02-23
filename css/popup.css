@@ -1,0 +1,35 @@
+.layerpop {
+    display: none;
+    z-index: 999999;
+    cursor: move;
+    position: fixed !important;
+    margin: 10px;
+}
+
+
+.layerpop_area .layerpop_close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.layerpop_area .layerpop_close:hover {
+    cursor: pointer;
+}
+
+.layerpop_area .content {
+    width: 100%;
+    margin: auto;
+    color: #828282;
+}
+
+- .layerpop_area .content > img {
+    border: 1.5px solid #fffa39;
+}
+
+.layerbox {
+    position: fixed !important;
+}

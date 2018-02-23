@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>정보문화사 - IT 도서의 표준</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link REL="SHORTCUT ICON" href="images/favicon.ico" />
+    <style>
+        @media all and (min-width: 800px) {
+            .fancybox-thumbs {
+                top: auto;
+                width: auto;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 180px;
+                padding: 10px 10px 5px 10px;
+                box-sizing: border-box;
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .fancybox-show-thumbs .fancybox-inner {
+                right: 0;
+                bottom: 95px;
+            }
+
+            .fancybox-thumbs>ul>li {
+                height: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body style="overflow: auto; overflow-x:hidden;">
+    <div id="page">
+        <div id="sub_book">
+            <header id="topBar">
+                <nav class="main_nav">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/top_logo.png" alt="로고">
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="sub_book.html">신간도서</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">아이폰/안드로이드</a></li>
+                                <li><a href="#">OA/전자출판</a></li>
+                                <li><a href="#">그래픽/홈페이지</a></li>
+                                <li><a href="#">일반프로그래밍</a></li>
+                                <li><a href="#">게임프로그래밍</a></li>
+                                <li><a href="#">데이터베이스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">출간예정</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">아이폰/안드로이드</a></li>
+                                <li><a href="#">OA/전자출판</a></li>
+                                <li><a href="#">그래픽/홈페이지</a></li>
+                                <li><a href="#">일반프로그래밍</a></li>
+                                <li><a href="#">게임프로그래밍</a></li>
+                                <li><a href="#">데이터베이스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">시리즈안내</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">길라잡이시리즈</a></li>
+                                <li><a href="#">눈길시리즈</a></li>
+                                <li><a href="#">쉽게배우는시리즈</a></li>
+                                <li><a href="#">실력이탐나는시리즈</a></li>
+                                <li><a href="#">모바일레시피시리즈</a></li>
+                                <li><a href="#">포토그래피시리즈</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub_event.html">이벤트</a>
+                        </li>
+                        <li><a href="sub_customer.html">고객지원</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <article class="newbook">
+                    <div class="newbook_tbg">
+                        <img src="images/sub_book/tbg.jpg" alt="book1">
+                    </div>
+                    <div class="imglist">
+                        <div class="newbook_title">
+                            신간도서
+                        </div>
+                        <div class="contents">
+                            <div>
+                                <div class="n_book">
+                                    <a href="images/sub_book/big1.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum1.jpg" alt="book" />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            회사 실무에 힘을 주는 스케치업
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>남현우
+                                                </p>
+                                                <p><span>ISBN</span> 978-89-5674-776-7
+                                                </p>
+                                                <p><span>발행일자</span> 2018-02-20
+                                                </p>
+                                            </div>
+                                            <div>
+                                                SketchUp Pro 2017은 3D 모델링부터 렌더링까지 디자이너와 설계자들에게 최적화된 그래픽 프로그램이기 때문에 다양한 분야에서 사용하고 있습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="n_book">
+                                    <a href="images/sub_book/big2.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum2.jpg" alt="book" />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            한 권으로 끝내는 OA
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>김미란 , 한종희 , 김휘중
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-749-1
+                                                </p>
+                                                <p><span>발행일자</span>2018-01-25</p>
+                                            </div>
+                                            <div>
+                                                이 책은 각종 문서 작성으로 어려움을 겪고 있는 신입 사원(취업 준비생) 등을 위해 최소한의 기초 지식과 기본 조작을 엄선하여 정리했습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <div class="side">
+                                <div class="n_book">
+                                    <a href="images/sub_book/big3.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum3.jpg"  alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            파이썬으로 배우는 웹 크롤러
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>박정태
+                                                </p>
+                                                <p><span>ISBN</span>979-11-6054-128-1</p>
+                                                <p><span>발행일자</span>2018-02-15</p>
+                                            </div>
+                                            <div>
+                                                이 책은 데이터를 수집 준비부터 활용하는 방법까지 소개하고 있습니다. 1단계 준비, 2단계 데이터 수집, 3단계 데이터 활용 단계로 구성되어 있습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side">
+                                <div class="n_book">
+                                    <a href="images/sub_book/big4.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum4.jpg"  alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            1인 미디어를 위한 스마트폰 활용법
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>김경수 , 정인걸 , 황세웅
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-773-6
+
+                                                </p>
+                                                <p><span>발행일자</span>2018-01-05</p>
+                                            </div>
+                                            <div>
+                                                홍보 기획자에게 가장 중요한 사진과 동영상(음악)의 기획 및 편집 기법부터 이 데이터들의 효율적인 활용법까지 안내합니다
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <div>
+                                <div class="n_book">
+                                    <a href="images/sub_book/big5.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum5.jpg"  alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            초보자도 쉽게 배우는 길라잡이
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>박승현
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-774-3
+                                                </p>
+                                                <p><span>발행일자</span>2017-12-12</p>
+                                            </div>
+                                            <div>
+                                                이 책은 초보자의 눈높이에 딱 맞춘 내용으로 구성되어 있습니다. 기본 구조를 차근차근 설명하며 자유롭게 컴퓨터를 활용할 수 있도록 안내합니다.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="n_book">
+                                    <a href="images/sub_book/big6.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum6.jpg"  alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            그림 한 장으로 보는 최신 IT 트렌드
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span> Saito Masanori
+                                                </p>
+                                                <p><span>ISBN</span>979-11-6054-128-1</p>
+                                                <p><span>발행일자</span>2017-11-10</p>
+                                            </div>
+                                            <div>
+                                                대부분 사람들이 IT가 중요하다는 것은 알지만 실제로 실생활과 비즈니스에 끼치는 IT의 영향력에 대해서는 무감각한 경우가 많습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <div class="side" style="margin-top: 2%;">
+                                <div class="n_book">
+                                    <a href="images/sub_book/big7.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum7.jpg"  alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            스마트폰으로 사진 잘 찍는 책
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>유환준
+                                                </p>
+                                                <p><span>ISBN</span> 978-89-5674-772-9
+                                                </p>
+                                                <p><span>발행일자</span>2017-10-20</p>
+                                            </div>
+                                            <div>
+                                                이 책은 스마트폰으로 셀카 찍는 방법과 인물, 음식, 풍경, 스냅 사진 등 사진 잘 찍는 노하우를 소개해주는 책입니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side" style="margin-top: 2%;">
+                                <div class="n_book">
+                                    <a href="images/sub_book/big8.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum8.jpg"  alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            실무에 활용할 수 있는 PPT
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>김은정
+                                                </p>
+                                                <p><span>ISBN</span> 978-89-5674-771-2
+                                                </p>
+                                                <p><span>발행일자</span>2017-10-20</p>
+                                            </div>
+                                            <div>
+                                                이 책은 IT 기업에서 각종 자료의 디자인과 투자자 결산 자료, 고객을 위한 제안 자료 등 자료 작성 시 실무 포커스를 맞춘 프레젠테이션 입문서입니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <div>
+                                <div class="n_book">
+                                    <a href="images/sub_book/big9.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum9.jpg"  alt="book" />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            게임 비주얼 이펙트 테크니컬 입문
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>장홍주
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-747-7
+                                                </p>
+                                                <p><span>발행일자</span>2017-09-12</p>
+                                            </div>
+                                            <div>
+                                                이 책은 게임 이펙트 리소스 개발을 위한 기초 기술로 시작되어 유니티 엔진을 기반으로 게임 이펙트를 실제적으로 제작하는 방법에 대해 다루고 있습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="n_book">
+                                    <a href="images/sub_book/big10.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum10.jpg"  alt="book" />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            미래를 바꿀 인공지능 로봇
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>이세철
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-748-4
+                                                </p>
+                                                <p><span>발행일자</span>2017-08-20</p>
+                                            </div>
+                                            <div>
+                                                책은 ‘인공지능 로봇’으로 변화될 미래를 설명하는 만큼 더욱 구체적인 미래에 대한 대비책이 될 수 있습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <div class="side" style="margin-top: 2%;">
+                                <div class="n_book">
+                                    <a href="images/sub_book/big11.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum11.jpg"  alt="book" />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            풀스택으로 만드는 첫 홈페이지
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>김태영
+                                                </p>
+                                                <p><span>ISBN</span>979-11-6054-128-1</p>
+                                                <p><span>발행일자</span>2018-02-15</p>
+                                            </div>
+                                            <div>
+                                                HTML을 사용해 웹페이지를 구성하고, CSS를 사용해 웹 페이지를 디자인하며, jQuery를 사용해 특수 기능을 구현하여 웹페이지를 구성합니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side" style="margin-top: 2%;">
+                                <div class="n_book">
+                                    <a href="images/sub_book/big12.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum12.jpg"  alt="book" />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            미래를 바꿀 IT 트렌드
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span> Saito Masanori
+                                                </p>
+                                                <p><span>ISBN</span>979-11-6054-128-1</p>
+                                                <p><span>발행일자</span>2018-02-15</p>
+                                            </div>
+                                            <div>
+                                                IT가 상식을 붕괴시키고 새로운 상식으로 바꿔 쓰려 하고 있습니다. 비즈니스는 IT와 하나가 되어 이 둘을 나누어 생각할 수 없는 시대로 들어섰습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contents">
+                            <div>
+                                <div class="n_book">
+                                    <a href="images/sub_book/big13.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum13.jpg"  alt="book" />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            DSLR 사용자를 위한 포토샵 CC
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>스콧 켈비
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-744-6
+                                                </p>
+                                                <p><span>발행일자</span>2017-07-10</p>
+                                            </div>
+                                            <div>
+                                                이번 최신판에서는 사진의 파일 형식에 관계없이 전보다 많은 작업 과정을 포토샵의 Camera Raw에서 실행하게 될 것입니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="n_book">
+                                    <a href="images/sub_book/big14.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum14.jpg" alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            초보자도 쉽게 배우는 자바
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>조효은
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-743-9
+                                                </p>
+                                                <p><span>발행일자</span>2018-02-15</p>
+                                            </div>
+                                            <div>
+                                                이 책은 안드로이드 앱 개발에 필요한 자바 문법과 안드로이드의 구조적 특징을 이해하여 안드로이드 앱을 쉽게 개발하는 방법을 알려줍니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <div class="side" style="margin-top: 2%;">
+                                <div class="n_book">
+                                    <a href="images/sub_book/big15.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum15.jpg"  alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>성공적인 웹 프로그래밍
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>루크 웰링 , 로라 톰슨
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-742-2
+                                                </p>
+                                                <p><span>발행일자</span>2017-05-17</p>
+                                            </div>
+                                            <div>
+                                                이 책에서는 PHP와 MySQL로 유용하고 안전한 웹 애플리케이션을 구현하는 방법을 알려줍니다. MySQL을 설정하고 사용하는 방법을 설명합니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side" style="margin-top: 2%;">
+                                <div class="n_book">
+                                    <a href="images/sub_book/big16.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum16.jpg" alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            포토샵+일러스트레이터 CC
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>유진영
+                                                </p>
+                                                <p><span>ISBN</span> 978-89-5674-741-5
+                                                </p>
+                                                <p><span>발행일자</span>2017-04-25</p>
+                                            </div>
+                                            <div>
+                                                이 책은 포토샵과 일러스트레이터 CC의 최신 버전을 기반으로 집필된 서적입니다. 각 작업에 대한 내용을 빠짐없이 설명하고 있습니다.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <div>
+                                <div class="n_book">
+                                    <a href="images/sub_book/big17.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum17.jpg" alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            게임 디자인의 상세 접근법
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>콜린 맥클린 , 존 샤프
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-739-2
+                                                </p>
+                                                <p><span>발행일자</span>2017-04-20</p>
+                                            </div>
+                                            <div>
+                                                이 책은 플레이 중심, 프로세스 주도형으로 사람들이 좋아하는 플레이와 디자인 접근법을 제공합니다. 놀라운 표현적 잠재력을 조명합니다.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="n_book">
+                                    <a href="images/sub_book/big18.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum18.jpg" alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            Amazon Web Services
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>최준승 , 이현진
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-740-8
+                                                </p>
+                                                <p><span>발행일자</span>2017-04-15</p>
+                                            </div>
+                                            <div>
+                                                책의 내용은 AWS라는 플랫폼을 다루고 있지만 GCP 등 다른 클라우드 플랫폼도 다른 플랫폼을 이해하는 데 도움이 될 것입니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <div style="margin-top: 2%;">
+                                <div class="n_book">
+                                    <a href="images/sub_book/big19.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum19.jpg" alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            실무 예제로 쉽게 배우는 포토샵
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span>신희성 , 강신심
+                                                </p>
+                                                <p><span>ISBN</span>978-89-5674-738-5
+                                                </p>
+                                                <p><span>발행일자</span>2017-04-15</p>
+                                            </div>
+                                            <div>
+                                                저자가 이 글을 쓰게 된 것은 처음 포토샵을 접하고, 배워나가는 학습자들이 얼마나 효율적으로 습득할 수 있을지에 대한 고민에서부터 시작되었습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 2%;">
+                                <div class="n_book">
+                                    <a href="images/sub_book/big20.jpg" data-fancybox="images">
+                                        <img src="images/sub_book/thum20.jpg" alt="book"  />
+                                    </a>
+                                </div>
+                                <div class="n_ex">
+                                    <div>
+                                        <h4>
+                                            4차 산업혁명, 비즈니스 트렌드
+                                        </h4>
+                                        <div>
+                                            <div>
+                                                <p><span>저자</span> 김민구
+                                                </p>
+                                                <p><span>ISBN</span> 978-89-5674-736-1
+                                                </p>
+                                                <p><span>발행일자</span>2017-03-15</p>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    이 책은 “4차 산업혁명” 키워드와 관련된 내용은 무수히 많지만, 이 책에서는 현실과 가상 세계를 넘나들며 영화 같은 상상을 펼칠 수있습니다.
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </article>
+            </section>
+            <footer>
+                <div class="foot_content">
+                    <div class="contents_l">
+                        <ul>
+                            <li><a href="">회사소개</a></li>
+                            <li><a href="">기획 및 원고 모집</a></li>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">개인정보취급방침</a></li>
+                            <li><a href="">사이트맵</a></li>
+                        </ul>
+                    </div>
+                    <div class="contents_c">
+                        <ul class="sns">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                        <div class="copy">©1993-2018 Infopub Publishing Network, Inc. All rights reserved.</div>
+                    </div>
+                    <div class="contents_r">
+                        <div>한빛미디어㈜ • 한빛아카데미㈜ • 한빛비즈㈜</div>
+                        <div>(03785) 서울 서대문구 연희로2길 62</div>
+                        <div>TEL : 02-325-0384 / FAX : 02-325-9697</div>
+                        <div>대표이사 : 김태헌</div>
+                        <div>사업자등록번호 : 220-81-05665</div>
+                        <div>통신판매업신고 : 2017-서울서대문-0671호</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--고정상단메뉴-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var topBar = $("#topBar").offset();
+
+            $(window).scroll(function() {
+
+                var docScrollY = $(document).scrollTop()
+                var barThis = $("#topBar")
+                var fixNext = $("#fixNextTag")
+                console.log(docScrollY);
+
+                if (docScrollY > topBar.top) {
+                    $(".main_nav a").css("color", "#333");
+                    $(".main_nav").css("color", "#333");
+                    barThis.addClass("top_bar_fix");
+                    fixNext.addClass("pd_top_80");
+                } else {
+                    barThis.removeClass("top_bar_fix");
+                    fixNext.removeClass("pd_top_80");
+                }
+
+            });
+
+        })
+
+    </script>
+    <!--fancybox-->
+    <script>
+        $('[data-fancybox="images"]').fancybox({
+            margin: [44, 0, 44, 0],
+            thumbs: {
+                autoStart: true,
+                axis: 'x'
+            }
+        })
+
+    </script>
+</body>
+
+</html>
